@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Mail, MapPin, Send } from "lucide-react"
+import { Mail, MapPin, Phone, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -50,6 +50,15 @@ export function Contact() {
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
                     <p className="text-foreground font-medium">itshimanshu666@gmail.com</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Phone</p>
+                    <p className="text-foreground font-medium">+91 63548 63548</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
