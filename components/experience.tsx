@@ -35,13 +35,13 @@ const experiences = [
     company: "S.G. Patel English Medium School, Ghej",
     type: "education",
     description:
-      "Completed Higher Secondary education with Science stream (PCM + Computer Science). Percentage: 60%",
+      "Completed Higher Secondary education with Science stream (PCM + Computer Science). Percentage: 53%",
     skills: ["Physics", "Chemistry", "Mathematics", "Computer Science"],
   },
   {
     period: "2020 - 2021",
     title: "Secondary School (10th)",
-    company: "D.M. Patel High School, Ghej",
+    company: "Good Shepherd English High Secondary School",
     type: "education",
     description:
       "Completed Secondary education with strong foundation in Mathematics and Science. Percentage: 78%",
