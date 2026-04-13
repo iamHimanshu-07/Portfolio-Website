@@ -49,7 +49,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="text-foreground font-medium">hello@example.com</p>
+                    <p className="text-foreground font-medium">itshimanshu666@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -58,7 +58,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="text-foreground font-medium">San Francisco, CA</p>
+                    <p className="text-foreground font-medium">Surat, Gujarat, India</p>
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export function Contact() {
                 Availability
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                I&apos;m currently open to new opportunities and freelance projects. 
+                I&apos;m currently a B.Tech student open to internships, freelance projects, and collaboration opportunities in AI/ML and web development. 
                 Feel free to reach out if you have an interesting project or just want to connect.
               </p>
               <div className="mt-4 flex items-center gap-2">

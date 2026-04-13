@@ -6,36 +6,36 @@ import { Badge } from "@/components/ui/badge"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Heart Disease Prediction System",
     description:
-      "A full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.",
-    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "A full-stack clinical web app using Flask & SQLite to predict heart disease risk (Low/Moderate/High) from 11 medical parameters. Integrated Google Gemini AI chatbot and automated PDF report generation.",
+    tags: ["Python", "Flask", "Scikit-Learn", "SQLite", "Gemini API", "ReportLab"],
+    github: "https://github.com/iamHimanshu-07",
+    live: "#",
   },
   {
-    title: "Task Management App",
+    title: "AI-Powered Mental Health Analyzer",
     description:
-      "Collaborative project management tool with real-time updates, drag-and-drop functionality, and team features.",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "An ML application that analyzes emotional patterns from text input to assess mental health indicators and detect stress, anxiety, and mood trends using NLP techniques.",
+    tags: ["Python", "NLP", "Scikit-Learn", "NLTK", "Flask", "Matplotlib"],
+    github: "https://github.com/iamHimanshu-07",
+    live: "#",
   },
   {
-    title: "AI Content Generator",
+    title: "Speech Recognition Web App",
     description:
-      "AI-powered content creation platform using modern LLMs for generating marketing copy and blog posts.",
-    tags: ["Python", "FastAPI", "OpenAI", "React"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "Real-time speech-to-text application supporting 8 languages with continuous listening, live audio visualization, transcript download, and dark/light theme toggle.",
+    tags: ["HTML", "CSS", "JavaScript", "Web Speech API"],
+    github: "https://github.com/iamHimanshu-07",
+    live: "#",
   },
   {
-    title: "Real-Time Analytics Dashboard",
+    title: "Movie Recommendation System",
     description:
-      "Interactive dashboard for visualizing business metrics with customizable widgets and data export features.",
-    tags: ["Vue.js", "D3.js", "GraphQL", "Redis"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "Built using content-based & collaborative filtering with cosine similarity to suggest movies based on user preferences and viewing history.",
+    tags: ["Python", "Scikit-Learn", "Pandas", "NumPy"],
+    github: "https://github.com/iamHimanshu-07",
+    live: "#",
   },
 ]
 

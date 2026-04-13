@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Software Developer Portfolio',
-  description: 'Full-stack software developer crafting modern web experiences with clean code and innovative solutions.',
+  title: 'Himanshu Singh Yadav | AI/ML Engineer & Full-Stack Developer',
+  description: 'AI/ML Engineer and Full-Stack Developer from Surat, Gujarat. Specializing in Machine Learning, Deep Learning, NLP, and modern web technologies. B.Tech student at P P Savani University.',
   generator: 'v0.app',
   icons: {
     icon: [

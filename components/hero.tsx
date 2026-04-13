@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Twitter, Facebook } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Hero() {
@@ -10,14 +10,15 @@ export function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-primary font-semibold tracking-wide uppercase text-sm">
-                Full-Stack Developer
+                AI/ML Engineer & Full-Stack Developer
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-                Building <span className="text-primary">Digital Experiences</span> That Matter
+                Hi, I&apos;m <span className="text-primary">Himanshu Singh Yadav</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-                I&apos;m a passionate software developer specializing in creating modern web applications 
-                with clean, efficient code. I transform complex problems into elegant, user-friendly solutions.
+                A passionate AI/ML enthusiast and full-stack developer from Surat, Gujarat. 
+                I specialize in building intelligent applications using Machine Learning, Deep Learning, 
+                and modern web technologies. Currently pursuing B.Tech in AI & ML.
               </p>
             </div>
 
@@ -35,7 +36,7 @@ export function Hero() {
 
             <div className="flex items-center gap-6 pt-4">
               <Link
-                href="https://github.com"
+                href="https://github.com/iamHimanshu-07"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -44,7 +45,7 @@ export function Hero() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/himanshu-singh-yadav-57144a2b7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -53,13 +54,22 @@ export function Hero() {
                 <span className="sr-only">LinkedIn</span>
               </Link>
               <Link
-                href="https://twitter.com"
+                href="https://x.com/iamhimanshu2312"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Twitter className="h-6 w-6" />
                 <span className="sr-only">Twitter</span>
+              </Link>
+              <Link
+                href="https://www.facebook.com/share/1CN913PNi9/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Facebook className="h-6 w-6" />
+                <span className="sr-only">Facebook</span>
               </Link>
             </div>
           </div>
@@ -70,18 +80,19 @@ export function Hero() {
               <div className="relative bg-card border border-border rounded-2xl p-8 shadow-2xl">
                 <pre className="text-sm text-muted-foreground overflow-x-auto">
                   <code>{`const developer = {
-  name: "Your Name",
-  role: "Full-Stack Developer",
+  name: "Himanshu Singh Yadav",
+  role: "AI/ML Engineer",
   skills: [
-    "TypeScript",
-    "React",
-    "Node.js",
-    "Next.js"
+    "Python",
+    "Machine Learning",
+    "Deep Learning",
+    "Flask",
+    "NLP"
   ],
   passions: [
-    "Clean Code",
-    "User Experience",
-    "Performance"
+    "Artificial Intelligence",
+    "Problem Solving",
+    "Innovation"
   ]
 };`}</code>
                 </pre>

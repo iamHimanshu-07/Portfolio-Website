@@ -2,36 +2,36 @@ import { Badge } from "@/components/ui/badge"
 
 const experiences = [
   {
+    period: "Oct 2025 - Nov 2025",
+    title: "Machine Learning Intern",
+    company: "Skillbit Technologies",
+    description:
+      "Executed end-to-end ML pipelines — data collection, preprocessing, feature engineering, model training, and evaluation on real-world industry datasets. Built a Movie Recommendation System and Spam SMS Classifier.",
+    skills: ["Python", "Machine Learning", "NLP", "Scikit-Learn"],
+  },
+  {
     period: "2023 - Present",
-    title: "Senior Software Engineer",
-    company: "Tech Company",
+    title: "B.Tech - AI & Machine Learning",
+    company: "P P Savani University, Kosamba, Gujarat",
     description:
-      "Lead development of scalable web applications serving millions of users. Architected microservices infrastructure and mentored junior developers.",
-    skills: ["React", "TypeScript", "Node.js", "AWS"],
+      "Currently pursuing B.Tech in Artificial Intelligence & Machine Learning with CGPA 7.5/10.0. Coursework includes AI, ML, DSA, DBMS, Cloud Computing, and AIoT.",
+    skills: ["Python", "AI/ML", "DSA", "Cloud Computing"],
   },
   {
-    period: "2021 - 2023",
-    title: "Full-Stack Developer",
-    company: "Startup Inc",
+    period: "2025",
+    title: "SSIP Participant",
+    company: "Student Startup & Innovation Policy",
     description:
-      "Built and maintained core product features from scratch. Implemented CI/CD pipelines and improved application performance by 40%.",
-    skills: ["Next.js", "PostgreSQL", "Docker", "GraphQL"],
+      "Selected under SSIP at P P Savani University for developing an AI-powered Crop Yield Prediction System using ML on soil, weather & fertilizer data to support data-driven agricultural decisions.",
+    skills: ["Machine Learning", "Data Science", "Agriculture Tech"],
   },
   {
-    period: "2019 - 2021",
-    title: "Frontend Developer",
-    company: "Digital Agency",
+    period: "2025",
+    title: "Certifications & Achievements",
+    company: "Multiple Platforms",
     description:
-      "Developed responsive web applications for diverse clients. Collaborated with design teams to create pixel-perfect interfaces.",
-    skills: ["React", "Vue.js", "Sass", "JavaScript"],
-  },
-  {
-    period: "2017 - 2019",
-    title: "Junior Developer",
-    company: "Web Studio",
-    description:
-      "Started professional journey building websites and web applications. Gained strong foundation in HTML, CSS, and JavaScript.",
-    skills: ["HTML", "CSS", "JavaScript", "jQuery"],
+      "Completed 13+ industry-relevant certifications across AI/ML, Cloud Computing, Full-Stack Development, and Data Analytics from AWS, Anthropic, Udemy, Coursera, and more.",
+    skills: ["AWS Cloud", "Gen AI", "Power BI", "Android Development"],
   },
 ]
 
@@ -47,7 +47,7 @@ export function Experience() {
             Professional Experience
           </h2>
           <p className="text-muted-foreground text-lg">
-            My journey in software development, from junior developer to senior engineer.
+            My journey in AI/ML and software development, from student to professional.
           </p>
         </div>
 
