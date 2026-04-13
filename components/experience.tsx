@@ -32,11 +32,11 @@ const experiences = [
   {
     period: "2021 - 2023",
     title: "Higher Secondary (12th)",
-    company: "S.G. Patel English Medium School, Ghej",
+    company: "Good Shepherd English High Secondary School",
     type: "education",
     description:
-      "Completed Higher Secondary education with Science stream (PCM + Computer Science). Percentage: 53%",
-    skills: ["Physics", "Chemistry", "Mathematics", "Computer Science"],
+      "Completed Higher Secondary education with Science stream (PCM).",
+    skills: ["Physics", "Chemistry", "Mathematics"],
   },
   {
     period: "2020 - 2021",
