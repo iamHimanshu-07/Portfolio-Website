@@ -1,105 +1,148 @@
 import { Badge } from "@/components/ui/badge"
+import { Briefcase, GraduationCap, Lightbulb } from "lucide-react"
 
 const experiences = [
   {
     period: "Oct 2025 - Nov 2025",
     title: "Machine Learning Intern",
     company: "Skillbit Technologies",
+    type: "work",
     description:
       "Executed end-to-end ML pipelines — data collection, preprocessing, feature engineering, model training, and evaluation on real-world industry datasets. Built a Movie Recommendation System and Spam SMS Classifier.",
     skills: ["Python", "Machine Learning", "NLP", "Scikit-Learn"],
   },
   {
-    period: "2023 - Present",
-    title: "B.Tech - AI & Machine Learning",
-    company: "P P Savani University, Kosamba, Gujarat",
-    description:
-      "Currently pursuing B.Tech in Artificial Intelligence & Machine Learning with CGPA 7.5/10.0. Coursework includes AI, ML, DSA, DBMS, Cloud Computing, and AIoT.",
-    skills: ["Python", "AI/ML", "DSA", "Cloud Computing"],
-  },
-  {
     period: "2025",
     title: "SSIP Participant",
     company: "Student Startup & Innovation Policy",
+    type: "achievement",
     description:
       "Selected under SSIP at P P Savani University for developing an AI-powered Crop Yield Prediction System using ML on soil, weather & fertilizer data to support data-driven agricultural decisions.",
     skills: ["Machine Learning", "Data Science", "Agriculture Tech"],
   },
   {
-    period: "2025",
-    title: "Certifications & Achievements",
-    company: "Multiple Platforms",
+    period: "2023 - Present",
+    title: "B.Tech - AI & Machine Learning",
+    company: "P P Savani University, Kosamba, Gujarat",
+    type: "education",
     description:
-      "Completed 13+ industry-relevant certifications across AI/ML, Cloud Computing, Full-Stack Development, and Data Analytics from AWS, Anthropic, Udemy, Coursera, and more.",
-    skills: ["AWS Cloud", "Gen AI", "Power BI", "Android Development"],
+      "Currently pursuing B.Tech in Artificial Intelligence & Machine Learning with CGPA 7.5/10.0. Coursework includes AI, ML, DSA, DBMS, Cloud Computing, and AIoT.",
+    skills: ["Python", "AI/ML", "DSA", "Cloud Computing"],
+  },
+  {
+    period: "2021 - 2023",
+    title: "Higher Secondary (12th)",
+    company: "S.G. Patel English Medium School, Ghej",
+    type: "education",
+    description:
+      "Completed Higher Secondary education with Science stream (PCM + Computer Science). Percentage: 60%",
+    skills: ["Physics", "Chemistry", "Mathematics", "Computer Science"],
+  },
+  {
+    period: "2020 - 2021",
+    title: "Secondary School (10th)",
+    company: "D.M. Patel High School, Ghej",
+    type: "education",
+    description:
+      "Completed Secondary education with strong foundation in Mathematics and Science. Percentage: 78%",
+    skills: ["Mathematics", "Science", "English", "Computer"],
   },
 ]
 
+const typeIcons = {
+  work: Briefcase,
+  education: GraduationCap,
+  achievement: Lightbulb,
+}
+
+const typeColors = {
+  work: "bg-emerald-500/10 border-emerald-500/30 text-emerald-400",
+  education: "bg-blue-500/10 border-blue-500/30 text-blue-400",
+  achievement: "bg-amber-500/10 border-amber-500/30 text-amber-400",
+}
+
 export function Experience() {
   return (
-    <section id="experience" className="py-24 lg:py-32">
+    <section id="experience" className="py-24 lg:py-32 bg-secondary/30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <p className="text-primary font-semibold tracking-wide uppercase text-sm mb-4">
-            Career Path
+            Journey
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
-            Professional Experience
+            Experience & Education
           </h2>
           <p className="text-muted-foreground text-lg">
-            My journey in AI/ML and software development, from student to professional.
+            My journey in AI/ML and software development, from education to professional experience.
           </p>
         </div>
 
-        <div className="relative max-w-3xl mx-auto">
+        <div className="relative max-w-4xl mx-auto">
           {/* Timeline line */}
-          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-px h-full w-0.5 bg-border" />
+          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-px top-0 bottom-0 w-0.5 bg-border" />
 
-          <div className="space-y-12">
-            {experiences.map((exp, index) => (
-              <div
-                key={exp.title}
-                className={`relative flex items-start gap-8 ${
-                  index % 2 === 0 ? "md:flex-row-reverse" : ""
-                }`}
-              >
-                {/* Timeline dot */}
-                <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background" />
-
-                {/* Content */}
+          <div className="space-y-8">
+            {experiences.map((exp, index) => {
+              const Icon = typeIcons[exp.type as keyof typeof typeIcons]
+              const colorClass = typeColors[exp.type as keyof typeof typeColors]
+              
+              return (
                 <div
-                  className={`ml-8 md:ml-0 md:w-1/2 ${
-                    index % 2 === 0 ? "md:pr-12" : "md:pl-12"
+                  key={index}
+                  className={`relative flex items-start gap-6 ${
+                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                   }`}
                 >
-                  <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-colors">
-                    <span className="text-sm text-primary font-medium">
-                      {exp.period}
-                    </span>
-                    <h3 className="text-xl font-semibold text-foreground mt-2">
-                      {exp.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm mt-1">
-                      {exp.company}
-                    </p>
-                    <p className="text-muted-foreground mt-4 leading-relaxed">
-                      {exp.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {exp.skills.map((skill) => (
-                        <Badge
-                          key={skill}
-                          variant="secondary"
-                          className="bg-secondary text-secondary-foreground"
-                        >
-                          {skill}
-                        </Badge>
-                      ))}
+                  {/* Timeline dot */}
+                  <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${colorClass}`}>
+                      <Icon className="h-4 w-4" />
                     </div>
                   </div>
+
+                  {/* Content */}
+                  <div
+                    className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${
+                      index % 2 === 0 ? "md:pr-8" : "md:pl-8"
+                    }`}
+                  >
+                    <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                          {exp.period}
+                        </span>
+                        <Badge variant="outline" className={`text-xs ${colorClass}`}>
+                          {exp.type === "work" ? "Work" : exp.type === "education" ? "Education" : "Achievement"}
+                        </Badge>
+                      </div>
+                      <h3 className="text-xl font-semibold text-foreground">
+                        {exp.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm mt-1 mb-4">
+                        {exp.company}
+                      </p>
+                      <p className="text-muted-foreground leading-relaxed text-sm">
+                        {exp.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {exp.skills.map((skill) => (
+                          <Badge
+                            key={skill}
+                            variant="secondary"
+                            className="bg-secondary text-secondary-foreground text-xs"
+                          >
+                            {skill}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Spacer for alternating layout */}
+                  <div className="hidden md:block md:w-[calc(50%-2rem)]" />
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </div>

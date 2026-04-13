@@ -1,35 +1,66 @@
+import { 
+  Brain, 
+  Code2, 
+  Database, 
+  Cloud, 
+  GitBranch, 
+  BarChart3,
+  Cpu,
+  Globe,
+  Server,
+  Terminal,
+  Layers,
+  Sparkles
+} from "lucide-react"
+
 const skillCategories = [
   {
     title: "AI / Machine Learning",
+    icon: Brain,
     skills: [
-      { name: "Python", level: 90 },
-      { name: "Machine Learning", level: 85 },
-      { name: "Deep Learning", level: 80 },
-      { name: "NLP", level: 85 },
-      { name: "Scikit-Learn", level: 90 },
-      { name: "Pandas & NumPy", level: 90 },
+      { name: "Python", icon: Terminal },
+      { name: "Machine Learning", icon: Cpu },
+      { name: "Deep Learning", icon: Layers },
+      { name: "Natural Language Processing (NLP)", icon: Sparkles },
+      { name: "Scikit-Learn", icon: Code2 },
+      { name: "Pandas & NumPy", icon: Database },
+      { name: "TensorFlow / Keras", icon: Cpu },
+      { name: "Data Preprocessing", icon: BarChart3 },
     ],
   },
   {
-    title: "Web & Backend",
+    title: "Web Development",
+    icon: Globe,
     skills: [
-      { name: "Flask", level: 85 },
-      { name: "Node.js", level: 75 },
-      { name: "REST APIs", level: 80 },
-      { name: "HTML/CSS", level: 85 },
-      { name: "JavaScript", level: 80 },
-      { name: "SQL", level: 80 },
+      { name: "Flask", icon: Server },
+      { name: "Node.js", icon: Server },
+      { name: "REST APIs", icon: Code2 },
+      { name: "HTML5 & CSS3", icon: Code2 },
+      { name: "JavaScript", icon: Terminal },
+      { name: "SQL & SQLite", icon: Database },
+      { name: "Responsive Design", icon: Globe },
     ],
   },
   {
-    title: "Cloud & Tools",
+    title: "Cloud & DevOps",
+    icon: Cloud,
     skills: [
-      { name: "AWS Cloud", level: 75 },
-      { name: "Git & GitHub", level: 90 },
-      { name: "Power BI", level: 80 },
-      { name: "Jupyter Notebook", level: 90 },
-      { name: "Matplotlib", level: 85 },
-      { name: "Gen AI / LLMs", level: 80 },
+      { name: "AWS Cloud Services", icon: Cloud },
+      { name: "Git & GitHub", icon: GitBranch },
+      { name: "Jupyter Notebook", icon: Terminal },
+      { name: "VS Code", icon: Code2 },
+      { name: "Linux/Ubuntu", icon: Terminal },
+    ],
+  },
+  {
+    title: "Data & Analytics",
+    icon: BarChart3,
+    skills: [
+      { name: "Power BI", icon: BarChart3 },
+      { name: "Matplotlib & Seaborn", icon: BarChart3 },
+      { name: "Data Visualization", icon: BarChart3 },
+      { name: "Statistical Analysis", icon: Cpu },
+      { name: "Gen AI / LLMs", icon: Sparkles },
     ],
   },
 ]
@@ -43,44 +74,46 @@ export function Skills() {
             Expertise
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
-            Skills & Technologies
+            Technical Skills
           </h2>
           <p className="text-muted-foreground text-lg">
-            A comprehensive overview of the technologies and tools I work with regularly.
+            Technologies and tools I use to build intelligent applications and solutions.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {skillCategories.map((category) => (
-            <div
-              key={category.title}
-              className="bg-card border border-border rounded-xl p-6"
-            >
-              <h3 className="text-xl font-semibold text-foreground mb-6">
-                {category.title}
-              </h3>
-              <div className="space-y-5">
-                {category.skills.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-foreground">
-                        {skill.name}
-                      </span>
-                      <span className="text-sm text-muted-foreground">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-primary rounded-full transition-all duration-500"
-                        style={{ width: `${skill.level}%` }}
-                      />
-                    </div>
+        <div className="grid md:grid-cols-2 gap-8">
+          {skillCategories.map((category) => {
+            const CategoryIcon = category.icon
+            return (
+              <div
+                key={category.title}
+                className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-colors"
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <CategoryIcon className="h-5 w-5 text-primary" />
                   </div>
-                ))}
+                  <h3 className="text-xl font-semibold text-foreground">
+                    {category.title}
+                  </h3>
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  {category.skills.map((skill) => {
+                    const SkillIcon = skill.icon
+                    return (
+                      <div
+                        key={skill.name}
+                        className="flex items-center gap-2 p-3 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors"
+                      >
+                        <SkillIcon className="h-4 w-4 text-primary flex-shrink-0" />
+                        <span className="text-sm text-foreground">{skill.name}</span>
+                      </div>
+                    )
+                  })}
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

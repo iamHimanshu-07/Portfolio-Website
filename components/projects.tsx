@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ExternalLink, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -12,6 +13,7 @@ const projects = [
     tags: ["Python", "Flask", "Scikit-Learn", "SQLite", "Gemini API", "ReportLab"],
     github: "https://github.com/iamHimanshu-07",
     live: "#",
+    image: "/images/heart-disease.jpg",
   },
   {
     title: "AI-Powered Mental Health Analyzer",
@@ -20,6 +22,7 @@ const projects = [
     tags: ["Python", "NLP", "Scikit-Learn", "NLTK", "Flask", "Matplotlib"],
     github: "https://github.com/iamHimanshu-07",
     live: "#",
+    image: "/images/mental-health.jpg",
   },
   {
     title: "Speech Recognition Web App",
@@ -28,6 +31,7 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "Web Speech API"],
     github: "https://github.com/iamHimanshu-07",
     live: "#",
+    image: "/images/speech-recognition.jpg",
   },
   {
     title: "Movie Recommendation System",
@@ -36,6 +40,7 @@ const projects = [
     tags: ["Python", "Scikit-Learn", "Pandas", "NumPy"],
     github: "https://github.com/iamHimanshu-07",
     live: "#",
+    image: "/images/movie-recommendation.jpg",
   },
 ]
 
@@ -51,7 +56,7 @@ export function Projects() {
             Featured Projects
           </h2>
           <p className="text-muted-foreground text-lg">
-            A selection of my recent work showcasing my skills in building modern web applications.
+            A selection of my recent work showcasing my skills in building modern AI/ML applications.
           </p>
         </div>
 
@@ -59,8 +64,17 @@ export function Projects() {
           {projects.map((project) => (
             <Card
               key={project.title}
-              className="group bg-card border-border hover:border-primary/50 transition-all duration-300"
+              className="group bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden"
             >
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+              </div>
               <CardHeader>
                 <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">
                   {project.title}
