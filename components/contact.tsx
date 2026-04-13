@@ -58,7 +58,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="text-foreground font-medium">+91 63548 63548</p>
+                    <p className="text-foreground font-medium">+91 6386220865</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
