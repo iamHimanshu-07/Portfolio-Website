@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, Github, Linkedin, Twitter, Facebook, Download, Eye } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -90,27 +91,52 @@ export function Hero() {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="relative w-full aspect-square max-w-md mx-auto">
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl" />
-              <div className="relative bg-card border border-border rounded-2xl p-8 shadow-2xl">
-                <pre className="text-sm text-muted-foreground overflow-x-auto">
-                  <code>{`const developer = {
-  name: "Himanshu Singh Yadav",
-  role: "AI/ML Engineer",
-  skills: [
-    "Python",
-    "Machine Learning",
-    "Deep Learning",
-    "Flask",
-    "NLP"
-  ],
-  passions: [
-    "Artificial Intelligence",
-    "Problem Solving",
-    "Innovation"
-  ]
-};`}</code>
-                </pre>
+            <div className="relative w-full max-w-lg mx-auto">
+              {/* Glowing background effects */}
+              <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+              <div className="absolute -inset-8 bg-primary/10 rounded-full blur-[80px]" />
+              
+              {/* Main image container */}
+              <div className="relative">
+                {/* Decorative border ring */}
+                <div className="absolute -inset-1 bg-gradient-to-br from-primary via-primary/50 to-transparent rounded-2xl" />
+                
+                {/* Image */}
+                <div className="relative overflow-hidden rounded-2xl border-2 border-primary/20">
+                  <Image
+                    src="/images/hero-developer.jpg"
+                    alt="Himanshu Singh Yadav - AI/ML Engineer"
+                    width={500}
+                    height={600}
+                    className="w-full h-auto object-cover"
+                    priority
+                  />
+                  
+                  {/* Overlay gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                  
+                  {/* Floating code snippet */}
+                  <div className="absolute bottom-4 left-4 right-4 bg-card/90 backdrop-blur-sm border border-border rounded-lg p-4 shadow-xl">
+                    <pre className="text-xs text-muted-foreground overflow-hidden">
+                      <code className="text-primary">const</code>
+                      <code>{` developer = {`}</code>
+                      <br />
+                      <code>{`  name: `}</code>
+                      <code className="text-primary">{`"Himanshu"`}</code>
+                      <code>{`,`}</code>
+                      <br />
+                      <code>{`  role: `}</code>
+                      <code className="text-primary">{`"AI/ML Engineer"`}</code>
+                      <br />
+                      <code>{`};`}</code>
+                    </pre>
+                  </div>
+                </div>
+                
+                {/* Floating badges */}
+                <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
+                  Open to Work
+                </div>
               </div>
             </div>
           </div>
