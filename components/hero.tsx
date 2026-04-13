@@ -42,6 +42,12 @@ export function Hero() {
                   View Resume
                 </Link>
               </Button>
+              <Button size="lg" variant="outline" asChild>
+                <a href="/Himanshu_Resume.pdf" download="Himanshu_Singh_Yadav_Resume.pdf">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
+              </Button>
             </div>
 
             <div className="flex items-center gap-6 pt-4">
