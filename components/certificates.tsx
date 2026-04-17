@@ -3,95 +3,60 @@ import { Badge } from "@/components/ui/badge"
 
 const certificates = [
   {
-    title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
-    issuer: "Amazon Web Services (AWS)",
-    date: "2025",
-    category: "Cloud Computing",
-    skills: ["AWS", "Cloud Architecture", "EC2", "S3", "IAM"],
-  },
-  {
-    title: "Prompt Engineering for Claude",
+    title: "Claude Code in Action",
     issuer: "Anthropic",
     date: "2025",
     category: "Generative AI",
-    skills: ["Prompt Engineering", "LLMs", "Claude AI", "AI Applications"],
+    skills: ["Claude AI", "Code Generation", "LLMs"],
   },
   {
-    title: "Build AI Agents & MCP Servers",
-    issuer: "Anthropic",
+    title: "AWS Academy Cloud Foundations",
+    issuer: "Amazon Web Services",
     date: "2025",
-    category: "AI Development",
-    skills: ["AI Agents", "MCP Servers", "LLMs", "Automation"],
+    category: "Cloud Computing",
+    skills: ["AWS", "Cloud Architecture", "EC2", "S3"],
   },
   {
-    title: "Introduction to Machine Learning",
-    issuer: "Kaggle",
+    title: "AWS Academy Generative AI Foundations",
+    issuer: "Amazon Web Services",
     date: "2025",
-    category: "Machine Learning",
-    skills: ["ML Fundamentals", "Supervised Learning", "Model Training"],
+    category: "Generative AI",
+    skills: ["Gen AI", "AWS AI/ML", "Large Language Models"],
   },
   {
-    title: "Intermediate Machine Learning",
-    issuer: "Kaggle",
-    date: "2025",
-    category: "Machine Learning",
-    skills: ["Feature Engineering", "Cross-Validation", "XGBoost"],
-  },
-  {
-    title: "Power BI Job Simulation",
-    issuer: "PwC Switzerland (via Forage)",
+    title: "Mastering Power BI Report Design",
+    issuer: "Udemy",
     date: "2025",
     category: "Data Analytics",
     skills: ["Power BI", "Data Visualization", "Business Intelligence"],
   },
   {
-    title: "Complete Python Developer in 2025",
-    issuer: "Udemy (Andrei Neagoie)",
+    title: "Canva AI Specialization: Design Apps, Websites & Visuals",
+    issuer: "Canva",
     date: "2025",
-    category: "Programming",
-    skills: ["Python", "OOP", "Web Scraping", "Automation"],
+    category: "Design & AI",
+    skills: ["Canva AI", "UI Design", "Visual Creation"],
   },
   {
-    title: "Data Science Full Course",
-    issuer: "Udemy",
+    title: "Build AI SaaS using Cursor & Gemini",
+    issuer: "Capabl India",
     date: "2025",
-    category: "Data Science",
-    skills: ["Data Science", "Statistics", "Python", "ML"],
+    category: "AI Development",
+    skills: ["Cursor AI", "Google Gemini", "SaaS Development"],
   },
   {
-    title: "Full Stack Web Development",
-    issuer: "Coursera (Board Infinity)",
-    date: "2024",
-    category: "Web Development",
-    skills: ["HTML", "CSS", "JavaScript", "Node.js", "React"],
-  },
-  {
-    title: "Android Development Internship",
-    issuer: "Codsoft",
-    date: "2024",
-    category: "Mobile Development",
-    skills: ["Android", "Java", "XML", "Mobile UI"],
-  },
-  {
-    title: "Introduction to Cloud Computing",
-    issuer: "IBM (via Coursera)",
-    date: "2024",
-    category: "Cloud Computing",
-    skills: ["Cloud Basics", "IBM Cloud", "DevOps", "Microservices"],
-  },
-  {
-    title: "Database Management System Basics",
-    issuer: "Infosys Springboard",
-    date: "2024",
-    category: "Database",
-    skills: ["SQL", "DBMS", "Normalization", "ER Diagrams"],
-  },
-  {
-    title: "Career Edge - TCS iON Digital Learning",
-    issuer: "TCS iON",
-    date: "2024",
+    title: "Strategic Information Technology",
+    issuer: "Saylor Academy",
+    date: "2025",
     category: "Professional Development",
-    skills: ["Communication", "IT Fundamentals", "Career Skills"],
+    skills: ["IT Strategy", "Information Systems", "Business Technology"],
+  },
+  {
+    title: "Android App Development Specialization",
+    issuer: "Coursera",
+    date: "2025",
+    category: "Mobile Development",
+    skills: ["Android", "Java", "Mobile UI"],
   },
 ]
 
@@ -99,13 +64,9 @@ const categoryColors: Record<string, string> = {
   "Cloud Computing": "bg-blue-500/10 text-blue-400 border-blue-500/20",
   "Generative AI": "bg-purple-500/10 text-purple-400 border-purple-500/20",
   "AI Development": "bg-violet-500/10 text-violet-400 border-violet-500/20",
-  "Machine Learning": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
   "Data Analytics": "bg-amber-500/10 text-amber-400 border-amber-500/20",
-  "Programming": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-  "Data Science": "bg-teal-500/10 text-teal-400 border-teal-500/20",
-  "Web Development": "bg-pink-500/10 text-pink-400 border-pink-500/20",
+  "Design & AI": "bg-pink-500/10 text-pink-400 border-pink-500/20",
   "Mobile Development": "bg-orange-500/10 text-orange-400 border-orange-500/20",
-  "Database": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20",
   "Professional Development": "bg-rose-500/10 text-rose-400 border-rose-500/20",
 }
 
@@ -121,7 +82,7 @@ export function Certificates() {
             Certifications & Achievements
           </h2>
           <p className="text-muted-foreground text-lg">
-            13+ industry-relevant certifications from leading platforms including AWS, Anthropic, Kaggle, and more.
+            8 certifications from leading platforms including Anthropic, AWS, Udemy, Coursera, and more.
           </p>
         </div>
 
