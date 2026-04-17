@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Github, Linkedin, Twitter, Facebook, Download, Eye } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Twitter, Facebook, Eye } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Hero() {
@@ -24,6 +24,15 @@ export function Hero() {
             </div>
 
             <div className="flex flex-wrap gap-4">
+              <Button size="lg" variant="secondary" asChild>
+                <Link href="/Himanshu_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <Eye className="mr-2 h-4 w-4" />
+                  View Resume
+                </Link>
+              </Button>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
               <Button size="lg" asChild>
                 <Link href="#projects">
                   View My Work
@@ -32,21 +41,6 @@ export function Hero() {
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link href="#contact">Contact Me</Link>
-              </Button>
-            </div>
-
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" variant="secondary" asChild>
-                <Link href="/Himanshu_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <Eye className="mr-2 h-4 w-4" />
-                  View Resume
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="/Himanshu_Resume.pdf" download="Himanshu_Singh_Yadav_Resume.pdf">
-                  <Download className="mr-2 h-4 w-4" />
-                  Download Resume
-                </a>
               </Button>
             </div>
 
