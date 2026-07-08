@@ -57,7 +57,7 @@ export function Footer() {
           </div>
 
           <p className="text-sm text-muted-foreground">
-            {currentYear} Himanshu Singh Yadav. All rights reserved.
+            &copy; {currentYear} Himanshu Singh Yadav. All rights reserved.
           </p>
         </div>
       </div>
