@@ -113,14 +113,10 @@ export function Hero() {
                   <div className="absolute bottom-4 left-4 right-4 bg-card/90 backdrop-blur-sm border border-border rounded-lg p-4 shadow-xl">
                     <pre className="text-xs text-muted-foreground overflow-hidden">
                       <code className="text-primary">const</code>
-                      <code>{` developer = {`}</code>
+                      <code>{` engineer = {`}</code>
                       <br />
                       <code>{`  name: `}</code>
-                      <code className="text-primary">{`"Himanshu"`}</code>
-                      <code>{`,`}</code>
-                      <br />
-                      <code>{`  role: `}</code>
-                      <code className="text-primary">{`"AI/ML Engineer"`}</code>
+                      <code className="text-primary">{`"Himanshu Singh Yadav"`}</code>
                       <br />
                       <code>{`};`}</code>
                     </pre>
