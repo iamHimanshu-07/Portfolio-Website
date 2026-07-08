@@ -5,7 +5,16 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
-const projects = [
+interface Project {
+  title: string
+  description: string
+  tags: string[]
+  github: string
+  live: string | null
+  image: string
+}
+
+const projects: Project[] = [
   {
     title: "Cardio.AI - Heart Disease Prediction",
     description:
@@ -42,6 +51,33 @@ const projects = [
     live: "https://movie-recommendation-system.vercel.app/",
     image: "/images/movie-recommendation.png",
   },
+  {
+    title: "SmartBin - AIoT Smart Dustbin",
+    description:
+      "An intelligent IoT smart dustbin system using ultrasonic sensors for automatic lid operation. Designed to optimize waste management and reduce manual intervention.",
+    tags: ["C++", "Arduino", "IoT", "Sensors", "Embedded Systems"],
+    github: "https://github.com/iamHimanshu-07/SmartBin",
+    live: null,
+    image: "/images/smartbin.png",
+  },
+  {
+    title: "Spam SMS Classifier",
+    description:
+      "Machine learning model to classify SMS messages as spam or legitimate using NLP techniques and ML algorithms for accurate text message filtering.",
+    tags: ["Python", "NLP", "Scikit-Learn", "Text Classification", "Machine Learning"],
+    github: "https://github.com/iamHimanshu-07/Spam-SMS-Classifier",
+    live: null,
+    image: "/images/spam-classifier.png",
+  },
+  {
+    title: "CryptoCast",
+    description:
+      "A cryptocurrency price prediction and analysis application using machine learning models to forecast market trends and provide insights on digital assets.",
+    tags: ["Python", "Machine Learning", "Financial Analysis", "Data Science"],
+    github: "https://github.com/iamHimanshu-07/CryptoCast",
+    live: null,
+    image: "/images/cryptocast.png",
+  },
 ]
 
 export function Projects() {
@@ -60,7 +96,7 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <Card
               key={project.title}
@@ -98,12 +134,14 @@ export function Projects() {
                       Code
                     </Link>
                   </Button>
-                  <Button size="sm" asChild>
-                    <Link href={project.live} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
-                    </Link>
-                  </Button>
+                  {project.live && (
+                    <Button size="sm" asChild>
+                      <Link href={project.live} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Live Demo
+                      </Link>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
