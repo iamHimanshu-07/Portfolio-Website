@@ -98,7 +98,7 @@ export function Hero() {
                 {/* Image */}
                 <div className="relative overflow-hidden rounded-2xl border-2 border-primary/20">
                   <Image
-                    src="/images/hero-developer.jpg"
+                    src="/images/hero-developer.png"
                     alt="Himanshu Singh Yadav - AI/ML Engineer"
                     width={500}
                     height={600}

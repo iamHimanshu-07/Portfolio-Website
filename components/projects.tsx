@@ -13,7 +13,7 @@ const projects = [
     tags: ["Python", "Flask", "Scikit-Learn", "SQLite", "Gemini API", "ReportLab"],
     github: "https://github.com/iamHimanshu-07",
     live: "#",
-    image: "/images/heart-disease.jpg",
+    image: "/images/heart-disease.png",
   },
   {
     title: "AI-Powered Mental Health Analyzer",
@@ -22,7 +22,7 @@ const projects = [
     tags: ["Python", "NLP", "Scikit-Learn", "NLTK", "Flask", "Matplotlib"],
     github: "https://github.com/iamHimanshu-07",
     live: "#",
-    image: "/images/mental-health.jpg",
+    image: "/images/mental-health.png",
   },
   {
     title: "Speech Recognition Web App",
@@ -31,7 +31,7 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "Web Speech API"],
     github: "https://github.com/iamHimanshu-07",
     live: "#",
-    image: "/images/speech-recognition.jpg",
+    image: "/images/speech-recognition.png",
   },
   {
     title: "Movie Recommendation System",
@@ -40,7 +40,7 @@ const projects = [
     tags: ["Python", "Scikit-Learn", "Pandas", "NumPy"],
     github: "https://github.com/iamHimanshu-07",
     live: "#",
-    image: "/images/movie-recommendation.jpg",
+    image: "/images/movie-recommendation.png",
   },
 ]
 
