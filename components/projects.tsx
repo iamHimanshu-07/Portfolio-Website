@@ -9,38 +9,65 @@ const projects = [
   {
     title: "Cardio.AI - Heart Disease Prediction",
     description:
-      "A full-stack clinical web app using Flask & SQLite to predict heart disease risk (Low/Moderate/High) from 11 medical parameters. Integrated Google Gemini AI chatbot and automated PDF report generation.",
-    tags: ["Python", "Flask", "Scikit-Learn", "SQLite", "Gemini API", "ReportLab"],
+      "An intelligent web-based healthcare app that predicts heart disease risk by analyzing 11 medical parameters through ML classification. Built with Flask & SQLite, featuring a responsive dashboard, trained Scikit-Learn model, and real-time prediction results.",
+    tags: ["Python", "Flask", "Scikit-Learn", "SQLite", "Bootstrap", "HTML"],
     github: "https://github.com/iamHimanshu-07/Cardio.AI",
-    live: "https://cardiop-predict.vercel.app/",
-    image: "/images/heart-disease.png",
+    live: "https://cardio-ai-j1pa.onrender.com",
+    image: "/images/heart-disease.jpg",
   },
   {
     title: "MindPulse.AI - Mental Health Analyzer",
     description:
-      "An ML application that analyzes emotional patterns from text input to assess mental health indicators and detect stress, anxiety, and mood trends using NLP techniques.",
-    tags: ["Python", "NLP", "Scikit-Learn", "NLTK", "Flask", "Matplotlib"],
+      "An end-to-end NLP project for multi-label mental-health emotion detection from free-form text. Uses TF-IDF + OneVsRest RandomForest on the DepressionEmo dataset, served through an interactive Streamlit dashboard with per-emotion probability charts.",
+    tags: ["Python", "NLP", "Scikit-Learn", "Streamlit", "TF-IDF", "RandomForest"],
     github: "https://github.com/iamHimanshu-07/MindPulse.AI",
-    live: "https://mindpulse-ai.vercel.app/",
-    image: "/images/mental-health.png",
+    live: "https://mindpulseai.streamlit.app",
+    image: "/images/mental-health.jpg",
   },
   {
-    title: "VoiceFlow - Speech Recognition Web App",
+    title: "VoiceFlow - Speech Recognition App",
     description:
-      "Real-time speech-to-text application supporting 8 languages with continuous listening, live audio visualization, transcript download, and dark/light theme toggle.",
-    tags: ["HTML", "CSS", "JavaScript", "Web Speech API"],
+      "A modern, AI-powered speech recognition web app with real-time voice-to-text conversion, multi-language support, live audio visualization, transcript download, and light/dark themes. Built with Next.js 16 and React 19.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Web Speech API"],
     github: "https://github.com/iamHimanshu-07/VoiceFlow",
-    live: "https://voiceflow-speech.vercel.app/",
-    image: "/images/speech-recognition.png",
+    live: "https://speech-recognition-web-rho.vercel.app",
+    image: "/images/speech-recognition.jpg",
+  },
+  {
+    title: "CryptoCast - Bitcoin Price Predictor",
+    description:
+      "A Streamlit dashboard that fetches live Bitcoin data from the CoinGecko API, computes technical indicators (moving averages, RSI, volatility), and uses a Random Forest model to predict next-day price direction and an approximate next-day price.",
+    tags: ["Python", "Streamlit", "Random Forest", "CoinGecko API", "Pandas"],
+    github: "https://github.com/iamHimanshu-07/CryptoCast",
+    live: "#",
+    image: "/images/cryptocast.png",
   },
   {
     title: "Movie Recommendation System",
     description:
-      "Built using Item-Based Collaborative Filtering and Cosine Similarity on the MovieLens dataset. Provides personalized movie recommendations based on user preferences and viewing history.",
+      "A recommendation engine built using Item-Based Collaborative Filtering and Cosine Similarity on the MovieLens dataset (9,742 movies, 100,836 ratings, 610 users) to suggest movies based on user rating patterns.",
     tags: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Collaborative Filtering"],
     github: "https://github.com/iamHimanshu-07/Movie-Recommendation-System",
-    live: "https://movie-recommendation-system.vercel.app/",
-    image: "/images/movie-recommendation.png",
+    live: "#",
+    image: "/images/movie-recommendation.jpg",
+  },
+  {
+    title: "SMS Spam Classifier",
+    description:
+      "A Machine Learning project that classifies SMS messages as Spam or Ham using NLP. Leverages TF-IDF Vectorization and Multinomial Naive Bayes to build an efficient text classification model with high detection accuracy.",
+    tags: ["Python", "NLP", "TF-IDF", "Naive Bayes", "Scikit-Learn"],
+    github: "https://github.com/iamHimanshu-07/Spam-SMS-Classifier",
+    live: "#",
+    image: "/images/spam-sms.png",
+  },
+  {
+    title: "SmartBin - AIoT Smart Dustbin",
+    description:
+      "A touch-free intelligent waste management system built with Arduino Uno, an HC-SR04 ultrasonic sensor, and a servo motor. Automatically opens the lid when a person approaches, improving hygiene for smart cities, hospitals, and public spaces.",
+    tags: ["C++", "Arduino", "IoT", "Ultrasonic Sensor", "Servo Motor"],
+    github: "https://github.com/iamHimanshu-07/SmartBin",
+    live: "#",
+    image: "/images/smartbin.png",
   },
 ]
 
@@ -98,12 +125,14 @@ export function Projects() {
                       Code
                     </Link>
                   </Button>
-                  <Button size="sm" asChild>
-                    <Link href={project.live} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
-                    </Link>
-                  </Button>
+                  {project.live !== "#" && (
+                    <Button size="sm" asChild>
+                      <Link href={project.live} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Live Demo
+                      </Link>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
