@@ -7,40 +7,40 @@ import { Badge } from "@/components/ui/badge"
 
 const projects = [
   {
-    title: "Heart Disease Prediction System",
+    title: "Cardio.AI - Heart Disease Prediction",
     description:
       "A full-stack clinical web app using Flask & SQLite to predict heart disease risk (Low/Moderate/High) from 11 medical parameters. Integrated Google Gemini AI chatbot and automated PDF report generation.",
     tags: ["Python", "Flask", "Scikit-Learn", "SQLite", "Gemini API", "ReportLab"],
-    github: "https://github.com/iamHimanshu-07",
-    live: "#",
-    image: "/images/heart-disease.jpg",
+    github: "https://github.com/iamHimanshu-07/Cardio.AI",
+    live: "https://cardiop-predict.vercel.app/",
+    image: "/images/heart-disease.png",
   },
   {
-    title: "AI-Powered Mental Health Analyzer",
+    title: "MindPulse.AI - Mental Health Analyzer",
     description:
       "An ML application that analyzes emotional patterns from text input to assess mental health indicators and detect stress, anxiety, and mood trends using NLP techniques.",
     tags: ["Python", "NLP", "Scikit-Learn", "NLTK", "Flask", "Matplotlib"],
-    github: "https://github.com/iamHimanshu-07",
-    live: "#",
-    image: "/images/mental-health.jpg",
+    github: "https://github.com/iamHimanshu-07/MindPulse.AI",
+    live: "https://mindpulse-ai.vercel.app/",
+    image: "/images/mental-health.png",
   },
   {
-    title: "Speech Recognition Web App",
+    title: "VoiceFlow - Speech Recognition Web App",
     description:
       "Real-time speech-to-text application supporting 8 languages with continuous listening, live audio visualization, transcript download, and dark/light theme toggle.",
     tags: ["HTML", "CSS", "JavaScript", "Web Speech API"],
-    github: "https://github.com/iamHimanshu-07",
-    live: "#",
-    image: "/images/speech-recognition.jpg",
+    github: "https://github.com/iamHimanshu-07/VoiceFlow",
+    live: "https://voiceflow-speech.vercel.app/",
+    image: "/images/speech-recognition.png",
   },
   {
     title: "Movie Recommendation System",
     description:
-      "Built using content-based & collaborative filtering with cosine similarity to suggest movies based on user preferences and viewing history.",
-    tags: ["Python", "Scikit-Learn", "Pandas", "NumPy"],
-    github: "https://github.com/iamHimanshu-07",
-    live: "#",
-    image: "/images/movie-recommendation.jpg",
+      "Built using Item-Based Collaborative Filtering and Cosine Similarity on the MovieLens dataset. Provides personalized movie recommendations based on user preferences and viewing history.",
+    tags: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Collaborative Filtering"],
+    github: "https://github.com/iamHimanshu-07/Movie-Recommendation-System",
+    live: "https://movie-recommendation-system.vercel.app/",
+    image: "/images/movie-recommendation.png",
   },
 ]
 
