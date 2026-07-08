@@ -85,7 +85,7 @@ export function Hero() {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="relative w-full max-w-lg mx-auto">
+            <div className="relative w-full max-w-sm mx-auto">
               {/* Glowing background effects */}
               <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl animate-pulse" />
               <div className="absolute -inset-8 bg-primary/10 rounded-full blur-[80px]" />
@@ -100,8 +100,8 @@ export function Hero() {
                   <Image
                     src="/images/himanshu-profile.jpg"
                     alt="Himanshu Singh Yadav - AI/ML Engineer"
-                    width={500}
-                    height={600}
+                    width={380}
+                    height={480}
                     className="w-full h-auto object-cover"
                     priority
                   />
