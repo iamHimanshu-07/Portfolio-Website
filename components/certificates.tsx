@@ -70,14 +70,7 @@ const certificates = [
     issuer: "Coursera",
     date: "2025",
     category: "Mobile Development",
-    skills: ["Android", "Java", "Mobile UI"],
-  },
-  {
-    title: "Android App Development Series",
-    issuer: "Vanderbilt University",
-    date: "2025",
-    category: "Mobile Development",
-    skills: ["Android Development", "Java", "Mobile Apps", "UI/UX", "+1 more"],
+    skills: ["Android Development", "Java", "Mobile Apps"],
   },
   {
     title: "Gen AI Study Jams Completion",
@@ -110,7 +103,7 @@ export function Certificates() {
             Certifications & Achievements
           </h2>
           <p className="text-muted-foreground text-lg">
-            13 certifications from leading platforms including Anthropic, AWS, Udemy, Coursera, Vanderbilt, Outskill, and more.
+            12 certifications from leading platforms including Anthropic, AWS, Udemy, Coursera, Outskill, and more.
           </p>
         </div>
 

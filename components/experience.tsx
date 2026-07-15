@@ -26,7 +26,7 @@ const experiences = [
     company: "P P Savani University, Kosamba, Gujarat",
     type: "education",
     description:
-      "Currently pursuing B.Tech in Artificial Intelligence & Machine Learning with CGPA 7.5/10.0. Coursework includes AI, ML, DSA, DBMS, Cloud Computing, and AIoT.",
+      "Currently pursuing B.Tech in Artificial Intelligence & Machine Learning with CGPA 7.71/10.0. Coursework includes AI, ML, DSA, DBMS, Cloud Computing, and AIoT.",
     skills: ["Python", "AI/ML", "DSA", "Cloud Computing"],
   },
   {
@@ -44,7 +44,7 @@ const experiences = [
     company: "Good Shepherd English High Secondary School",
     type: "education",
     description:
-      "Completed Secondary education with strong foundation in Mathematics and Science.\nPercentile: 83%",
+      "Completed Secondary education with strong foundation in Mathematics and Science.\n\nPercentile: 83%",
     skills: ["Mathematics", "Science", "English", "Computer"],
   },
 ]
