@@ -58,7 +58,7 @@ const projects = [
     tags: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Collaborative Filtering"],
     github: "https://github.com/iamHimanshu-07/Movie-Recommendation-System",
     live: "#",
-    image: "/images/movie-recommendation.jpg",
+    image: "/images/movie-recommendation.png",
   },
   {
     title: "SMS Spam Classifier",
