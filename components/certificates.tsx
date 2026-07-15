@@ -3,11 +3,25 @@ import { Badge } from "@/components/ui/badge"
 
 const certificates = [
   {
+    title: "Generative AI Mastermind",
+    issuer: "Outskill",
+    date: "2026",
+    category: "Generative AI",
+    skills: ["Advanced AI", "Strategic Thinking", "AI Leadership"],
+  },
+  {
     title: "Claude Code in Action",
     issuer: "Anthropic",
-    date: "2025",
+    date: "2026",
     category: "Generative AI",
     skills: ["Claude AI", "Code Generation", "LLMs"],
+  },
+  {
+    title: "AWS Educate Introduction to Cloud 101",
+    issuer: "Amazon Web Services",
+    date: "2025",
+    category: "Cloud Computing",
+    skills: ["AWS", "Cloud Basics", "Cloud Services"],
   },
   {
     title: "AWS Academy Cloud Foundations",
@@ -82,7 +96,7 @@ export function Certificates() {
             Certifications & Achievements
           </h2>
           <p className="text-muted-foreground text-lg">
-            8 certifications from leading platforms including Anthropic, AWS, Udemy, Coursera, and more.
+            11 certifications from leading platforms including Anthropic, AWS, Udemy, Coursera, Outskill, and more.
           </p>
         </div>
 
