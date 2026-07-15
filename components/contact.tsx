@@ -10,11 +10,29 @@ import { FieldGroup, Field, FieldLabel } from "@/components/ui/field"
 export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [showCollaborationMessage, setShowCollaborationMessage] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
-    // Simulate form submission
+
+    const formData = new FormData(e.currentTarget)
+    const subject = formData.get("subject") as string
+    const message = formData.get("message") as string
+
+    // Check if subject or message contains "work with us" keywords
+    const collaborationKeywords = ["work with us", "partnership", "collaborate", "let's work"]
+    const isCollaborationRequest = collaborationKeywords.some(
+      keyword => subject.toLowerCase().includes(keyword) || message.toLowerCase().includes(keyword)
+    )
+
+    if (isCollaborationRequest) {
+      setIsSubmitting(false)
+      setShowCollaborationMessage(true)
+      return
+    }
+
+    // Simulate form submission for regular messages
     await new Promise((resolve) => setTimeout(resolve, 1000))
     setIsSubmitting(false)
     setSubmitted(true)
@@ -93,7 +111,27 @@ export function Contact() {
 
           {/* Contact Form */}
           <div className="bg-card border border-border rounded-xl p-8">
-            {submitted ? (
+            {showCollaborationMessage ? (
+              <div className="text-center py-12">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Send className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  Collaboration Request Noted
+                </h3>
+                <p className="text-muted-foreground">
+                  Thank you for your interest in working together! Please connect via direct email or phone for partnership and collaboration opportunities.
+                </p>
+                <div className="mt-6 flex flex-col gap-3">
+                  <a href="mailto:itshimanshu666@gmail.com" className="text-primary hover:text-primary/80 font-medium">
+                    itshimanshu666@gmail.com
+                  </a>
+                  <a href="tel:+916386220865" className="text-primary hover:text-primary/80 font-medium">
+                    +91 6386220865
+                  </a>
+                </div>
+              </div>
+            ) : submitted ? (
               <div className="text-center py-12">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Send className="h-8 w-8 text-primary" />
@@ -111,6 +149,7 @@ export function Contact() {
                   <Field>
                     <FieldLabel>Name</FieldLabel>
                     <Input
+                      name="name"
                       type="text"
                       placeholder="Your name"
                       required
@@ -121,6 +160,7 @@ export function Contact() {
                   <Field>
                     <FieldLabel>Email</FieldLabel>
                     <Input
+                      name="email"
                       type="email"
                       placeholder="your@email.com"
                       required
@@ -131,6 +171,7 @@ export function Contact() {
                   <Field>
                     <FieldLabel>Subject</FieldLabel>
                     <Input
+                      name="subject"
                       type="text"
                       placeholder="What's this about?"
                       required
@@ -141,6 +182,7 @@ export function Contact() {
                   <Field>
                     <FieldLabel>Message</FieldLabel>
                     <Textarea
+                      name="message"
                       placeholder="Tell me about your project..."
                       rows={5}
                       required
