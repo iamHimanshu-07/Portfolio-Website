@@ -31,7 +31,7 @@ export function Contact() {
             Let&apos;s Work Together
           </h2>
           <p className="text-muted-foreground text-lg">
-            Have a project in mind or want to discuss opportunities? I&apos;d love to hear from you.
+            Have a project in mind or want to discuss opportunities? Please connect directly via email or phone.
           </p>
         </div>
 
