@@ -94,7 +94,7 @@ export function Hero() {
                 {/* Image container */}
                 <div className="relative overflow-hidden rounded-2xl bg-muted shadow-2xl">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-kcZW8WdTHOxIQiRxQZjIGGamfyBLBF.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-08%20at%2010.38.45%20AM-6rAssYl1RyCe5IFn0QL9wufhLoJ5bs.jpeg"
                     alt="Himanshu Singh Yadav - AI/ML Engineer"
                     width={400}
                     height={500}
