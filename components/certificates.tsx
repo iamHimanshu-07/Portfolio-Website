@@ -24,27 +24,6 @@ const certificates = [
     skills: ["Gen AI", "AWS AI/ML", "Large Language Models"],
   },
   {
-    title: "Mastering Power BI Report Design",
-    issuer: "Udemy",
-    date: "2025",
-    category: "Data Analytics",
-    skills: ["Power BI", "Data Visualization", "Business Intelligence"],
-  },
-  {
-    title: "Canva AI Specialization: Design Apps, Websites & Visuals",
-    issuer: "Canva",
-    date: "2025",
-    category: "Design & AI",
-    skills: ["Canva AI", "UI Design", "Visual Creation"],
-  },
-  {
-    title: "Build AI SaaS using Cursor & Gemini",
-    issuer: "Capabl India",
-    date: "2025",
-    category: "AI Development",
-    skills: ["Cursor AI", "Google Gemini", "SaaS Development"],
-  },
-  {
     title: "Strategic Information Technology",
     issuer: "Saylor Academy",
     date: "2025",
@@ -57,6 +36,20 @@ const certificates = [
     date: "2025",
     category: "Mobile Development",
     skills: ["Android", "Java", "Mobile UI"],
+  },
+  {
+    title: "Computer Vision - NPTEL Elite",
+    issuer: "IIT Kharagpur / Swayam",
+    date: "2024",
+    category: "AI/ML",
+    skills: ["Computer Vision", "Deep Learning", "Image Processing"],
+  },
+  {
+    title: "Cloud Computing - NPTEL Elite",
+    issuer: "IIT Kharagpur / Swayam",
+    date: "2024",
+    category: "Cloud Computing",
+    skills: ["Cloud Architecture", "AWS", "Distributed Systems"],
   },
 ]
 

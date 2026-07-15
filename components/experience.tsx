@@ -8,8 +8,8 @@ const experiences = [
     company: "Skillbit Technologies",
     type: "work",
     description:
-      "Executed end-to-end ML pipelines — data collection, preprocessing, feature engineering, model training, and evaluation on real-world industry datasets. Built a Movie Recommendation System and Spam SMS Classifier.",
-    skills: ["Python", "Machine Learning", "NLP", "Scikit-Learn"],
+      "Executed end-to-end ML pipelines — data collection, preprocessing, feature engineering, model training, and evaluation on real-world industry datasets. Built a Movie Recommendation Engine using item-based collaborative filtering (9,742 movies, 100,836 ratings) and SMS Spam Classifier (96.7% accuracy).",
+    skills: ["Python", "Machine Learning", "NLP", "Scikit-Learn", "Pandas"],
   },
   {
     period: "2025",
@@ -17,8 +17,17 @@ const experiences = [
     company: "Student Startup & Innovation Policy",
     type: "achievement",
     description:
-      "Selected under SSIP at P P Savani University for developing an AI-powered Crop Yield Prediction System using ML on soil, weather & fertilizer data to support data-driven agricultural decisions.",
+      "Selected under SSIP at P P Savani University for developing an AI-powered Crop Yield Prediction System using ML on soil, weather & fertilizer data to support data-driven agricultural decisions for farmers.",
     skills: ["Machine Learning", "Data Science", "Agriculture Tech"],
+  },
+  {
+    period: "2025",
+    title: "Tech Globe Fest Attendee",
+    company: "Tech Community",
+    type: "achievement",
+    description:
+      "Attended Tech Globe Fest Hackathon 2025 with participation in specialized technical panels and networking with enterprise engineers regarding production deployment of Generative AI systems.",
+    skills: ["Generative AI", "Networking", "AI/ML Trends"],
   },
   {
     period: "2023 - Present",
@@ -26,26 +35,8 @@ const experiences = [
     company: "P P Savani University, Kosamba, Gujarat",
     type: "education",
     description:
-      "Currently pursuing B.Tech in Artificial Intelligence & Machine Learning with CGPA 7.5/10.0. Coursework includes AI, ML, DSA, DBMS, Cloud Computing, and AIoT.",
-    skills: ["Python", "AI/ML", "DSA", "Cloud Computing"],
-  },
-  {
-    period: "2021 - 2023",
-    title: "Higher Secondary (12th)",
-    company: "Good Shepherd English High Secondary School",
-    type: "education",
-    description:
-      "Completed Higher Secondary education with Science stream (PCM).",
-    skills: ["Physics", "Chemistry", "Mathematics"],
-  },
-  {
-    period: "2020 - 2021",
-    title: "Secondary School (10th)",
-    company: "Good Shepherd English High Secondary School",
-    type: "education",
-    description:
-      "Completed Secondary education with strong foundation in Mathematics and Science. Percentage: 78%",
-    skills: ["Mathematics", "Science", "English", "Computer"],
+      "Pursuing B.Tech in Artificial Intelligence & Machine Learning with CGPA 7.71/10.0. Relevant Coursework: Python, AI, ML, DSA, DBMS, Cloud Computing, Computer Networks, Web Technologies, Android Studio, R Programming, AIoT, and Business Analytics.",
+    skills: ["Python", "AI/ML", "DSA", "Cloud Computing", "DBMS"],
   },
 ]
 
