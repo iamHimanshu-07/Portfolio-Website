@@ -72,6 +72,27 @@ const certificates = [
     category: "Mobile Development",
     skills: ["Android", "Java", "Mobile UI"],
   },
+  {
+    title: "Android App Development Series",
+    issuer: "Vanderbilt University",
+    date: "2025",
+    category: "Mobile Development",
+    skills: ["Android Development", "Java", "Mobile Apps", "UI/UX", "+1 more"],
+  },
+  {
+    title: "Gen AI Study Jams Completion",
+    issuer: "GDGc PPSU",
+    date: "2025",
+    category: "Generative AI",
+    skills: ["AI Fundamentals", "LLMs", "AI Applications"],
+  },
+  {
+    title: "Internal Hackathon Participant",
+    issuer: "GDGc PPSU",
+    date: "2025",
+    category: "Professional Development",
+    skills: ["Problem Solving", "Team Collaboration", "Innovation"],
+  },
 ]
 
 const categoryColors: Record<string, string> = {
@@ -96,7 +117,7 @@ export function Certificates() {
             Certifications & Achievements
           </h2>
           <p className="text-muted-foreground text-lg">
-            11 certifications from leading platforms including Anthropic, AWS, Udemy, Coursera, Outskill, and more.
+            14 certifications from leading platforms including Anthropic, AWS, Udemy, Coursera, Vanderbilt, Outskill, and more.
           </p>
         </div>
 
