@@ -20,11 +20,11 @@ const achievements = [
   },
   {
     icon: Trophy,
-    title: "13+ Certifications Completed",
-    subtitle: "Continuous Learning",
+    title: "Internal Hackathon Participant - 2025",
+    subtitle: "Innovation & Problem Solving",
     description:
-      "Completed 13+ industry-relevant certifications across AI/ML, Cloud Computing, Full-Stack Development, and Data Analytics from leading platforms.",
-    highlights: ["AI/ML", "Cloud Computing", "Data Analytics"],
+      "Participated in the GDGc PPSU Internal Hackathon, demonstrating strong problem-solving skills and collaboration abilities. Worked with cross-functional teams to develop innovative solutions and contributed to a dynamic innovation environment.",
+    highlights: ["Problem Solving", "Team Collaboration", "Innovation"],
   },
 ]
 

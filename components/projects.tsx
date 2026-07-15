@@ -13,7 +13,7 @@ const projects = [
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Web Speech API"],
     github: "https://github.com/iamHimanshu-07/VoiceFlow",
     live: "https://speech-recognition-web-rho.vercel.app",
-    image: "/images/speech-recognition.jpg",
+    image: "/images/speech-recognition.png",
   },
   {
     title: "MindPulse.AI - Mental Health Analyzer",
@@ -22,7 +22,7 @@ const projects = [
     tags: ["Python", "NLP", "Scikit-Learn", "Streamlit", "TF-IDF", "RandomForest"],
     github: "https://github.com/iamHimanshu-07/MindPulse.AI",
     live: "https://mindpulseai.streamlit.app",
-    image: "/images/mental-health.jpg",
+    image: "/images/mental-health.png",
   },
   {
     title: "Cardio.AI - Heart Disease Prediction",
@@ -31,7 +31,7 @@ const projects = [
     tags: ["Python", "Flask", "Scikit-Learn", "SQLite", "Bootstrap", "HTML"],
     github: "https://github.com/iamHimanshu-07/Cardio.AI",
     live: "https://cardio-ai-j1pa.onrender.com",
-    image: "/images/heart-disease.jpg",
+    image: "/images/heart-disease.png",
   },
   {
     title: "TransitOps - Smart Transport Operations Platform",
@@ -58,7 +58,7 @@ const projects = [
     tags: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Collaborative Filtering"],
     github: "https://github.com/iamHimanshu-07/Movie-Recommendation-System",
     live: "#",
-    image: "/images/movie-recommendation.jpg",
+    image: "/images/movie-recommendation.png",
   },
   {
     title: "SMS Spam Classifier",
