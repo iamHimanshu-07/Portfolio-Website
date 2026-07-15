@@ -33,7 +33,6 @@ const skillCategories = [
     icon: Globe,
     skills: [
       { name: "React 19", icon: Code2 },
-      { name: "Next.js 16", icon: Server },
       { name: "TypeScript", icon: Terminal },
       { name: "Tailwind CSS", icon: Code2 },
       { name: "Flask", icon: Server },
