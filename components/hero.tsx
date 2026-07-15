@@ -11,13 +11,13 @@ export function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-primary font-semibold tracking-wide uppercase text-sm">
-                AI/ML Engineer & Full-Stack Engineer
+                AI/ML Engineer & Full-Stack Developer
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
                 Hi, I&apos;m <span className="text-primary">Himanshu Singh Yadav</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-                A passionate AI/ML enthusiast and full-stack engineer from Surat, Gujarat. 
+                A passionate AI/ML enthusiast and full-stack developer from Surat, Gujarat.
                 I specialize in building intelligent applications using Machine Learning, Deep Learning, 
                 and modern web technologies. Currently pursuing B.Tech in AI & ML.
               </p>
