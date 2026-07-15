@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Mail, MapPin, Phone, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -10,14 +10,40 @@ import { FieldGroup, Field, FieldLabel } from "@/components/ui/field"
 export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState("")
+  const formRef = useRef<HTMLFormElement>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    setIsSubmitting(false)
-    setSubmitted(true)
+    setError("")
+
+    try {
+      const formData = new FormData(e.currentTarget)
+      const name = formData.get("name") as string
+      const email = formData.get("email") as string
+      const subject = formData.get("subject") as string
+      const message = formData.get("message") as string
+
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, subject, message }),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to send message")
+      }
+
+      setSubmitted(true)
+      formRef.current?.reset()
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to send message")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -106,12 +132,13 @@ export function Contact() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} ref={formRef}>
                 <FieldGroup>
                   <Field>
                     <FieldLabel>Name</FieldLabel>
                     <Input
                       type="text"
+                      name="name"
                       placeholder="Your name"
                       required
                       className="bg-background"
@@ -122,6 +149,7 @@ export function Contact() {
                     <FieldLabel>Email</FieldLabel>
                     <Input
                       type="email"
+                      name="email"
                       placeholder="your@email.com"
                       required
                       className="bg-background"
@@ -132,6 +160,7 @@ export function Contact() {
                     <FieldLabel>Subject</FieldLabel>
                     <Input
                       type="text"
+                      name="subject"
                       placeholder="What's this about?"
                       required
                       className="bg-background"
@@ -142,11 +171,18 @@ export function Contact() {
                     <FieldLabel>Message</FieldLabel>
                     <Textarea
                       placeholder="Tell me about your project..."
+                      name="message"
                       rows={5}
                       required
                       className="bg-background resize-none"
                     />
                   </Field>
+
+                  {error && (
+                    <div className="text-sm text-red-500 bg-red-50 dark:bg-red-950 p-3 rounded">
+                      {error}
+                    </div>
+                  )}
 
                   <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
                     {isSubmitting ? "Sending..." : "Send Message"}
