@@ -7,13 +7,13 @@ import { Badge } from "@/components/ui/badge"
 
 const projects = [
   {
-    title: "VoiceFlow - Speech Recognition App",
+    title: "Cardio.AI - Heart Disease Prediction",
     description:
-      "A modern, AI-powered speech recognition web app with real-time voice-to-text conversion, multi-language support, live audio visualization, transcript download, and light/dark themes. Built with Next.js 16 and React 19.",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Web Speech API"],
-    github: "https://github.com/iamHimanshu-07/VoiceFlow",
-    live: "https://speech-recognition-web-rho.vercel.app",
-    image: "/images/speech-recognition.png",
+      "An intelligent web-based healthcare app that predicts heart disease risk by analyzing 11 medical parameters through ML classification. Built with Flask & SQLite, featuring a responsive dashboard, trained Scikit-Learn model, and real-time prediction results.",
+    tags: ["Python", "Flask", "Scikit-Learn", "SQLite", "Bootstrap", "HTML"],
+    github: "https://github.com/iamHimanshu-07/Cardio.AI",
+    live: "https://cardio-ai-j1pa.onrender.com",
+    image: "/images/heart-disease.png",
   },
   {
     title: "MindPulse.AI - Mental Health Analyzer",
@@ -25,22 +25,13 @@ const projects = [
     image: "/images/mental-health.png",
   },
   {
-    title: "Cardio.AI - Heart Disease Prediction",
+    title: "VoiceFlow - Speech Recognition App",
     description:
-      "An intelligent web-based healthcare app that predicts heart disease risk by analyzing 11 medical parameters through ML classification. Built with Flask & SQLite, featuring a responsive dashboard, trained Scikit-Learn model, and real-time prediction results.",
-    tags: ["Python", "Flask", "Scikit-Learn", "SQLite", "Bootstrap", "HTML"],
-    github: "https://github.com/iamHimanshu-07/Cardio.AI",
-    live: "https://cardio-ai-j1pa.onrender.com",
-    image: "/images/heart-disease.png",
-  },
-  {
-    title: "TransitOps - Smart Transport Operations Platform",
-    description:
-      "An intelligent transport operations platform designed to optimize vehicle routing, fleet management, and real-time tracking. Built with modern web technologies to streamline logistics and improve operational efficiency for transport businesses.",
-    tags: ["Node.js", "React", "MongoDB", "Real-time Tracking", "Fleet Management"],
-    github: "https://github.com/iamHimanshu-07/TransitOps-Smart-Transport-Operations-Platform",
-    live: "#",
-    image: "/images/transitops.png",
+      "A modern, AI-powered speech recognition web app with real-time voice-to-text conversion, multi-language support, live audio visualization, transcript download, and light/dark themes. Built with Next.js 16 and React 19.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Web Speech API"],
+    github: "https://github.com/iamHimanshu-07/VoiceFlow",
+    live: "https://speech-recognition-web-rho.vercel.app",
+    image: "/images/speech-recognition.png",
   },
   {
     title: "CryptoCast - Bitcoin Price Predictor",
