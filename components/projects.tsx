@@ -7,13 +7,13 @@ import { Badge } from "@/components/ui/badge"
 
 const projects = [
   {
-    title: "Cardio.AI - Heart Disease Prediction",
+    title: "VoiceFlow - Speech Recognition App",
     description:
-      "An intelligent web-based healthcare app that predicts heart disease risk by analyzing 11 medical parameters through ML classification. Built with Flask & SQLite, featuring a responsive dashboard, trained Scikit-Learn model, and real-time prediction results.",
-    tags: ["Python", "Flask", "Scikit-Learn", "SQLite", "Bootstrap", "HTML"],
-    github: "https://github.com/iamHimanshu-07/Cardio.AI",
-    live: "https://cardio-ai-j1pa.onrender.com",
-    image: "/images/heart-disease.jpg",
+      "A modern, AI-powered speech recognition web app with real-time voice-to-text conversion, multi-language support, live audio visualization, transcript download, and light/dark themes. Built with Next.js 16 and React 19.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Web Speech API"],
+    github: "https://github.com/iamHimanshu-07/VoiceFlow",
+    live: "https://speech-recognition-web-rho.vercel.app",
+    image: "/images/speech-recognition.jpg",
   },
   {
     title: "MindPulse.AI - Mental Health Analyzer",
@@ -25,13 +25,22 @@ const projects = [
     image: "/images/mental-health.jpg",
   },
   {
-    title: "VoiceFlow - Speech Recognition App",
+    title: "Cardio.AI - Heart Disease Prediction",
     description:
-      "A modern, AI-powered speech recognition web app with real-time voice-to-text conversion, multi-language support, live audio visualization, transcript download, and light/dark themes. Built with Next.js 16 and React 19.",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Web Speech API"],
-    github: "https://github.com/iamHimanshu-07/VoiceFlow",
-    live: "https://speech-recognition-web-rho.vercel.app",
-    image: "/images/speech-recognition.jpg",
+      "An intelligent web-based healthcare app that predicts heart disease risk by analyzing 11 medical parameters through ML classification. Built with Flask & SQLite, featuring a responsive dashboard, trained Scikit-Learn model, and real-time prediction results.",
+    tags: ["Python", "Flask", "Scikit-Learn", "SQLite", "Bootstrap", "HTML"],
+    github: "https://github.com/iamHimanshu-07/Cardio.AI",
+    live: "https://cardio-ai-j1pa.onrender.com",
+    image: "/images/heart-disease.jpg",
+  },
+  {
+    title: "TransitOps - Smart Transport Operations Platform",
+    description:
+      "A comprehensive fleet management system for transport businesses with live operations dashboard, vehicle dispatch, driver management, maintenance tracking, fuel/expense logging, and ROI analytics. Built with Express.js, SQLite, JWT auth, and vanilla HTML/CSS/JS — single binary, zero SaaS.",
+    tags: ["Node.js", "Express", "SQLite", "JWT", "REST API", "HTML/CSS/JS"],
+    github: "https://github.com/iamHimanshu-07/TransitOps-Smart-Transport-Operations-Platform",
+    live: "#",
+    image: "/images/transitops.png",
   },
   {
     title: "CryptoCast - Bitcoin Price Predictor",
