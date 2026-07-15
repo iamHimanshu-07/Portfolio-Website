@@ -13,6 +13,22 @@ export function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    const form = e.currentTarget
+    const subject = (form.elements.namedItem("subject") as HTMLInputElement)?.value.toLowerCase() || ""
+    const message = (form.elements.namedItem("message") as HTMLTextAreaElement)?.value.toLowerCase() || ""
+    
+    // Check if this is a work/business inquiry
+    const workKeywords = ["work", "hire", "freelance", "project", "collaboration", "opportunity", "job", "business"]
+    const isWorkInquiry = workKeywords.some(keyword => 
+      subject.includes(keyword) || message.includes(keyword)
+    )
+    
+    if (isWorkInquiry) {
+      // Show error message
+      alert("Work inquiries cannot be submitted through this form. Please contact me directly at itshimanshu666@gmail.com or +91 6386220865")
+      return
+    }
+    
     setIsSubmitting(true)
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000))
@@ -132,6 +148,7 @@ export function Contact() {
                     <FieldLabel>Subject</FieldLabel>
                     <Input
                       type="text"
+                      name="subject"
                       placeholder="What's this about?"
                       required
                       className="bg-background"
@@ -141,6 +158,7 @@ export function Contact() {
                   <Field>
                     <FieldLabel>Message</FieldLabel>
                     <Textarea
+                      name="message"
                       placeholder="Tell me about your project..."
                       rows={5}
                       required
