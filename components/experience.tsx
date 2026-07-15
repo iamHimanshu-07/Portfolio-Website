@@ -119,7 +119,7 @@ export function Experience() {
                       <p className="text-muted-foreground text-sm mt-1 mb-4">
                         {exp.company}
                       </p>
-                      <p className="text-muted-foreground leading-relaxed text-sm">
+                      <p className="text-muted-foreground leading-relaxed text-sm whitespace-pre-wrap">
                         {exp.description}
                       </p>
                       <div className="flex flex-wrap gap-2 mt-4">
