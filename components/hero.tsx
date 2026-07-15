@@ -85,41 +85,41 @@ export function Hero() {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="relative w-full max-w-sm mx-auto">
+            <div className="relative w-full max-w-lg mx-auto">
               {/* Main image container with cyan border */}
               <div className="relative">
-                {/* Cyan border frame - thicker border */}
-                <div className="absolute -inset-6 bg-primary rounded-3xl" />
+                {/* Cyan border frame */}
+                <div className="absolute -inset-5 bg-primary rounded-3xl" />
                 
                 {/* Image container */}
-                <div className="relative overflow-hidden rounded-2xl bg-muted shadow-2xl">
+                <div className="relative overflow-hidden rounded-3xl bg-muted shadow-2xl">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-08%20at%2010.38.45%20AM-6rAssYl1RyCe5IFn0QL9wufhLoJ5bs.jpeg"
                     alt="Himanshu Singh Yadav - AI/ML Engineer"
-                    width={400}
-                    height={500}
+                    width={450}
+                    height={560}
                     className="w-full h-auto object-cover"
                     priority
                   />
                   
                   {/* Floating code snippet at bottom */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/95 to-transparent pt-16 pb-6 px-6">
-                    <div className="bg-secondary/50 backdrop-blur-sm border border-border/50 rounded-lg p-4 shadow-xl">
-                      <pre className="text-xs font-mono leading-relaxed text-foreground">
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/98 to-transparent pt-20 pb-8 px-8">
+                    <div className="bg-secondary rounded-xl p-5 shadow-xl border border-border/30">
+                      <pre className="text-sm font-mono leading-relaxed text-foreground">
                         <span className="text-primary">const</span>
-                        <span>{` engineer = {`}</span>
+                        <span className="text-foreground">{` engineer = {`}</span>
                         <br />
                         <span className="text-muted-foreground">{`  name: `}</span>
                         <span className="text-primary">{`"Himanshu Singh Yadav"`}</span>
                         <br />
-                        <span>{`};`}</span>
+                        <span className="text-foreground">{`};`}</span>
                       </pre>
                     </div>
                   </div>
                 </div>
                 
                 {/* Open to Work badge */}
-                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-bold shadow-lg hover:shadow-xl transition-shadow">
+                <div className="absolute top-6 right-6 bg-primary text-primary-foreground px-6 py-3 rounded-full text-sm font-bold shadow-lg hover:shadow-xl transition-shadow">
                   Open to Work
                 </div>
               </div>
