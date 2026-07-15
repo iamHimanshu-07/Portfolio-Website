@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button"
 
 export function Hero() {
   return (
-    <section id="about" className="min-h-screen flex items-center pt-20">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+    <section id="about" className="min-h-screen flex items-center pt-12">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-primary font-semibold tracking-wide uppercase text-sm">
                 AI/ML Engineer & Full-Stack Developer
@@ -85,7 +85,7 @@ export function Hero() {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="relative w-full max-w-md mx-auto">
+            <div className="relative w-full max-w-sm mx-auto">
               {/* Main image container with cyan border */}
               <div className="relative">
                 {/* Cyan border frame - thicker border */}
