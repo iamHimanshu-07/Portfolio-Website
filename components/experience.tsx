@@ -44,7 +44,7 @@ const experiences = [
     company: "Good Shepherd English High Secondary School",
     type: "education",
     description:
-      "Completed Secondary education with strong foundation in Mathematics and Science.  Percentile: 83%",
+      "Completed Secondary education with strong foundation in Mathematics and Science.", "Percentile: 83%",
     skills: ["Mathematics", "Science", "English", "Computer"],
   },
 ]
@@ -85,13 +85,12 @@ export function Experience() {
             {experiences.map((exp, index) => {
               const Icon = typeIcons[exp.type as keyof typeof typeIcons]
               const colorClass = typeColors[exp.type as keyof typeof typeColors]
-              
+
               return (
                 <div
                   key={index}
-                  className={`relative flex items-start gap-6 ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
+                  className={`relative flex items-start gap-6 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
                 >
                   {/* Timeline dot */}
                   <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
@@ -102,9 +101,8 @@ export function Experience() {
 
                   {/* Content */}
                   <div
-                    className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${
-                      index % 2 === 0 ? "md:pr-8" : "md:pl-8"
-                    }`}
+                    className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"
+                      }`}
                   >
                     <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
                       <div className="flex items-center justify-between mb-3">
