@@ -44,7 +44,7 @@ const experiences = [
     company: "Good Shepherd English High Secondary School",
     type: "education",
     description:
-      "Completed Secondary education with strong foundation in Mathematics and Science. Percentage: 78%",
+      "Completed Secondary education with strong foundation in Mathematics and Science. Percentile: 83",
     skills: ["Mathematics", "Science", "English", "Computer"],
   },
 ]

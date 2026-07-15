@@ -86,13 +86,6 @@ const certificates = [
     category: "Generative AI",
     skills: ["AI Fundamentals", "LLMs", "AI Applications"],
   },
-  {
-    title: "Internal Hackathon Participant",
-    issuer: "GDGc PPSU",
-    date: "2025",
-    category: "Professional Development",
-    skills: ["Problem Solving", "Team Collaboration", "Innovation"],
-  },
 ]
 
 const categoryColors: Record<string, string> = {
@@ -117,7 +110,7 @@ export function Certificates() {
             Certifications & Achievements
           </h2>
           <p className="text-muted-foreground text-lg">
-            14 certifications from leading platforms including Anthropic, AWS, Udemy, Coursera, Vanderbilt, Outskill, and more.
+            13 certifications from leading platforms including Anthropic, AWS, Udemy, Coursera, Vanderbilt, Outskill, and more.
           </p>
         </div>
 
