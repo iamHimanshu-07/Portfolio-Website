@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section id="about" className="min-h-screen flex items-center pt-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-primary font-semibold tracking-wide uppercase text-sm">
@@ -84,7 +84,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative hidden lg:block">
+          <div className="relative">
             <div className="relative w-full max-w-sm mx-auto">
               {/* Glowing background effects */}
               <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl animate-pulse" />
