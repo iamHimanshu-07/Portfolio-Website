@@ -82,7 +82,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-8 md:py-12 lg:py-24 xl:py-32">
+    <section id="projects" className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <p className="text-primary font-semibold tracking-wide uppercase text-sm mb-4">

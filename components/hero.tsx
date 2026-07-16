@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 export function Hero() {
   return (
     <section id="about" className="min-h-screen flex items-center pt-20">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-8 md:py-12 lg:py-24 xl:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 lg:py-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
