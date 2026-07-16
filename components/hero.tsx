@@ -84,19 +84,15 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative w-full max-w-sm mx-auto">
-              {/* Glowing background effects */}
-              <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-              <div className="absolute -inset-8 bg-primary/10 rounded-full blur-[80px]" />
-              
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-sm">
               {/* Main image container */}
               <div className="relative">
-                {/* Decorative border ring */}
-                <div className="absolute -inset-1 bg-gradient-to-br from-primary via-primary/50 to-transparent rounded-2xl" />
+                {/* Solid cyan border */}
+                <div className="absolute -inset-3 bg-primary rounded-2xl" />
                 
-                {/* Image */}
-                <div className="relative overflow-hidden rounded-2xl border-2 border-primary/20">
+                {/* Image with rounded corners */}
+                <div className="relative overflow-hidden rounded-2xl border border-primary/40 bg-background">
                   <Image
                     src="/images/himanshu-profile.jpg"
                     alt="Himanshu Singh Yadav - AI/ML Engineer"
@@ -106,25 +102,25 @@ export function Hero() {
                     priority
                   />
                   
-                  {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                  {/* Overlay gradient for code section */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-transparent to-transparent" />
                   
                   {/* Floating code snippet */}
-                  <div className="absolute bottom-4 left-4 right-4 bg-card/90 backdrop-blur-sm border border-border rounded-lg p-4 shadow-xl">
-                    <pre className="text-xs text-muted-foreground overflow-hidden">
+                  <div className="absolute bottom-6 left-4 right-4 bg-background/95 backdrop-blur-md border border-primary/30 rounded-lg p-4 shadow-xl">
+                    <pre className="text-xs text-muted-foreground font-mono overflow-hidden leading-relaxed">
                       <code className="text-primary">const</code>
-                      <code>{` engineer = {`}</code>
+                      <code className="text-foreground">{` engineer = {`}</code>
                       <br />
-                      <code>{`  name: `}</code>
+                      <code className="text-foreground">{`  name: `}</code>
                       <code className="text-primary">{`"Himanshu Singh Yadav"`}</code>
                       <br />
-                      <code>{`};`}</code>
+                      <code className="text-foreground">{`};`}</code>
                     </pre>
                   </div>
                 </div>
                 
-                {/* Floating badges */}
-                <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
+                {/* Floating badge */}
+                <div className="absolute -top-3 right-6 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                   Open to Work
                 </div>
               </div>
