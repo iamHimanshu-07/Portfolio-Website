@@ -13,7 +13,7 @@
 
 **A modern, fully-responsive personal portfolio website showcasing AI/ML projects, skills, and professional journey.**
 
-[🌐 Live Demo](https://v0-portfolio-website-brown-three.vercel.app) — [💼 LinkedIn](https://www.linkedin.com/in/himanshu-singh-yadav-57144a2b7) — [🐙 GitHub](https://github.com/iamHimanshu-07) — [📧 Email](mailto:itshimanshu666@gmail.com)
+[🌐 Live Demo](https://himanshu-personal-portfolio.vercel.app) — [💼 LinkedIn](https://www.linkedin.com/in/himanshu-singh-yadav-57144a2b7) — [🐙 GitHub](https://github.com/iamHimanshu-07) — [📧 Email](mailto:itshimanshu666@gmail.com)
 
 </div>
 
@@ -420,7 +420,7 @@ Contributions are welcome! Please follow these steps:
 | **LinkedIn** | [Himanshu Singh Yadav](https://www.linkedin.com/in/himanshu-singh-yadav-57144a2b7) |
 | **GitHub** | [@iamHimanshu-07](https://github.com/iamHimanshu-07) |
 | **Twitter** | [@iamhimanshu2312](https://x.com/iamhimanshu2312) |
-| **Portfolio** | [v0-portfolio-website-brown-three.vercel.app](https://v0-portfolio-website-brown-three.vercel.app) |
+| **Portfolio** | [himanshu-personal-portfolio.vercel.app](https://himanshu-personal-portfolio.vercel.app) |
 
 ### Quick Links
 
@@ -462,6 +462,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 **Built with ❤️ by Himanshu Singh Yadav**
 
-Last Updated: 2026 | [View Live](https://v0-portfolio-website-brown-three.vercel.app)
+Last Updated: 2026 | [View Live](https://himanshu-personal-portfolio.vercel.app)
 
 </div>
