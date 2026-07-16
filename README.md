@@ -239,13 +239,9 @@ pnpm start
 
 # Lint code quality
 pnpm lint
-
-# Format code with Prettier
-pnpm format
-
-# Type check
-pnpm type-check
 ```
+
+> These match the `scripts` defined in `package.json`. Add `format` or `type-check` commands there if you wire up Prettier / `tsc --noEmit` scripts.
 
 ### Development Best Practices
 
@@ -320,12 +316,13 @@ CMD ["pnpm", "start"]
 - **Font Optimization** — System fonts loaded from next/font
 - **Caching Strategy** — Static generation and incremental static regeneration
 
-### Performance Metrics
+### Performance Goals
 
-- **Lighthouse Score:** 95+ (Accessibility, Best Practices, SEO)
-- **Core Web Vitals:** All green (LCP, FID, CLS)
-- **Page Load:** &lt;2 seconds on 4G
-- **Bundle Size:** Optimized with tree-shaking
+Targets guided by the App Router / RSC setup:
+- **Lighthouse:** aim for 90+ across Accessibility, Best Practices, and SEO
+- **Core Web Vitals:** green LCP, FID/INP, and CLS
+- **Page Load:** &lt;2s on 4G
+- **Bundle Size:** kept lean with tree-shaking and dynamic imports
 
 ---
 
@@ -365,9 +362,6 @@ CMD ["pnpm", "start"]
 ### Testing
 
 ```bash
-# Run accessibility tests
-pnpm audit:a11y
-
 # Manual testing
 # - Keyboard navigation: Use Tab, Enter, Arrow keys
 # - Screen readers: Test with NVDA (Windows), JAWS, or VoiceOver (Mac)
@@ -441,15 +435,8 @@ Contributions are welcome! Please follow these steps:
 
 ## 📊 Git Branches Strategy
 
-**Main Branch:**
-- `main` — Production-ready code, deployed to Vercel
-- All changes merged after testing
-- Protected branch with PR reviews
-
-**Development:**
-- Feature branches for individual features
-- Named as `feature/feature-name` or `fix/bug-name`
-- Created from `main` and merged back after review
+- `main` — Production-ready code, deployed to Vercel on every push
+- Feature branches follow the convention `feature/<name>` or `fix/<name>`, branched from and merged back into `main` via PR
 
 ---
 
@@ -475,6 +462,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 **Built with ❤️ by Himanshu Singh Yadav**
 
-Last Updated: 2025 | [View Live](https://v0-portfolio-website-brown-three.vercel.app)
+Last Updated: 2026 | [View Live](https://v0-portfolio-website-brown-three.vercel.app)
 
 </div>
