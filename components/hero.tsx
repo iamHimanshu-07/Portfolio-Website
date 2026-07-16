@@ -44,7 +44,7 @@ export function Hero() {
               </Button>
             </div>
 
-            <div className="flex items-center gap-6 pt-4">
+            <div className="flex items-center gap-6 pt-8 md:pt-4">
               <Link
                 href="https://github.com/iamHimanshu-07"
                 target="_blank"
