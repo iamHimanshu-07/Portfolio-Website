@@ -84,6 +84,9 @@ export function Hero() {
             </div>
           </div>
 
+
+
+
           <div className="relative">
             <div className="relative w-full max-w-sm mx-auto">
               {/* Glowing background effects */}
