@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section id="about" className="min-h-screen flex items-center pt-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 lg:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-primary font-semibold tracking-wide uppercase text-sm">
@@ -84,15 +84,19 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-sm">
+          <div className="relative">
+            <div className="relative w-full max-w-sm mx-auto">
+              {/* Glowing background effects */}
+              <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+              <div className="absolute -inset-8 bg-primary/10 rounded-full blur-[80px]" />
+              
               {/* Main image container */}
               <div className="relative">
-                {/* Solid cyan border */}
-                <div className="absolute -inset-3 bg-primary rounded-2xl" />
+                {/* Decorative border ring */}
+                <div className="absolute -inset-1 bg-gradient-to-br from-primary via-primary/50 to-transparent rounded-2xl" />
                 
-                {/* Image with rounded corners */}
-                <div className="relative overflow-hidden rounded-2xl border border-primary/40 bg-background">
+                {/* Image */}
+                <div className="relative overflow-hidden rounded-2xl border-2 border-primary/20">
                   <Image
                     src="/images/himanshu-profile.jpg"
                     alt="Himanshu Singh Yadav - AI/ML Engineer"
@@ -102,25 +106,25 @@ export function Hero() {
                     priority
                   />
                   
-                  {/* Overlay gradient for code section */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-transparent to-transparent" />
+                  {/* Overlay gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
                   
                   {/* Floating code snippet */}
-                  <div className="absolute bottom-6 left-4 right-4 bg-background/95 backdrop-blur-md border border-primary/30 rounded-lg p-4 shadow-xl">
-                    <pre className="text-xs text-muted-foreground font-mono overflow-hidden leading-relaxed">
+                  <div className="absolute bottom-4 left-4 right-4 bg-card/90 backdrop-blur-sm border border-border rounded-lg p-4 shadow-xl">
+                    <pre className="text-xs text-muted-foreground overflow-hidden">
                       <code className="text-primary">const</code>
-                      <code className="text-foreground">{` engineer = {`}</code>
+                      <code>{` engineer = {`}</code>
                       <br />
-                      <code className="text-foreground">{`  name: `}</code>
+                      <code>{`  name: `}</code>
                       <code className="text-primary">{`"Himanshu Singh Yadav"`}</code>
                       <br />
-                      <code className="text-foreground">{`};`}</code>
+                      <code>{`};`}</code>
                     </pre>
                   </div>
                 </div>
                 
-                {/* Floating badge */}
-                <div className="absolute -top-3 right-6 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                {/* Floating badges */}
+                <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
                   Open to Work
                 </div>
               </div>
